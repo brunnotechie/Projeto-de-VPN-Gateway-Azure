@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550">
+  <style>
+    .resource-group {
+      fill: #1C1C1C;
+      stroke: #FFFFFF;
+      stroke-width: 2px;
+      rx: 10px;
+    }
+    .resource-title {
+      font-size: 16px;
+      font-weight: bold;
+      fill: #FFFFFF;
+    }
+    .resource {
+      fill: #2F2F2F;
+      stroke: #FFFFFF;
+      stroke-width: 1px;
+      rx: 5px;
+    }
+    .resource-text {
+      font-size: 14px;
+      fill: #FFFFFF;
+    }
+    .connection {
+      stroke: #4169E1;
+      stroke-width: 2px;
+      marker-end: url(#arrow);
+    }
+    #arrow {
+      fill: #4169E1;
+    }
+  </style>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4169E1" />
+    </marker>
+  </defs>
+
+  <g transform="translate(50, 50)">
+    <rect class="resource-group" width="700" height="450" />
+    <text class="resource-title" x="350" y="30" text-anchor="middle">Microsoft Azure (Região)</text>
+
+    <g transform="translate(50, 70)">
+      <rect class="resource" width="200" height="150" />
+      <text class="resource-text" x="100" y="30" text-anchor="middle">Resource Group</text>
+      <g transform="translate(25, 50)">
+        <rect class="resource" width="150" height="80" />
+        <text class="resource-text" x="75" y="25" text-anchor="middle">Virtual Network</text>
+        <g transform="translate(0, 40)">
+          <rect class="resource" width="70" height="40" />
+          <text class="resource-text" x="35" y="15" text-anchor="middle">Subnet privada app</text>
+        </g>
+        <g transform="translate(80, 40)">
+          <rect class="resource" width="70" height="40" />
+          <text class="resource-text" x="35" y="15" text-anchor="middle">Subnet privada BD</text>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(300, 70)">
+      <rect class="resource" width="150" height="80" />
+      <text class="resource-text" x="75" y="25" text-anchor="middle">VPN Gateway</text>
+    </g>
+
+    <g transform="translate(500, 70)">
+      <rect class="resource" width="150" height="150" />
+      <text class="resource-text" x="75" y="30" text-anchor="middle">Máquinas Virtuais (DBs)</text>
+      <g transform="translate(25, 50)">
+        <rect class="resource" width="50" height="50" />
+        <text class="resource-text" x="25" y="20" text-anchor="middle">DB1</text>
+      </g>
+      <g transform="translate(75, 50)">
+        <rect class="resource" width="50" height="50" />
+        <text class="resource-text" x="25" y="20" text-anchor="middle">DB2</text>
+      </g>
+      <g transform="translate(125, 50)">
+        <rect class="resource" width="50" height="50" />
+        <text class="resource-text" x="25" y="20" text-anchor="middle">DB N</text>
+      </g>
+    </g>
+
+    <g transform="translate(50, 250)">
+      <rect class="resource" width="200" height="200" />
+      <text class="resource-text" x="100" y="30" text-anchor="middle">Home Offices</text>
+      <g transform="translate(25, 50)">
+        <rect class="resource" width="150" height="40" />
+        <text class="resource-text" x="75" y="15" text-anchor="middle">Home Office 1</text>
+      </g>
+      <g transform="translate(25, 100)">
+        <rect class="resource" width="150" height="40" />
+        <text class="resource-text" x="75" y="15" text-anchor="middle">Home Office 2</text>
+      </g>
+      <g transform="translate(25, 150)">
+        <rect class="resource" width="150" height="40" />
+        <text class="resource-text" x="75" y="15" text-anchor="middle">Home Office N</text>
+      </g>
+    </g>
+
+    <g transform="translate(300, 250)">
+      <rect class="resource" width="200" height="200" />
+      <text class="resource-text" x="100" y="30" text-anchor="middle">Escritório (on-premises)</text>
+    </g>
+
+    <path class="connection" d="M150,220 L150,270 L300,270" />
+    <path class="connection" d="M300,150 L375,150 L375,270 L500,270" />
+    <path class="connection" d="M375,150 L375,100 L450,100" />
+  </g>
+</svg>
